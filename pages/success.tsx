@@ -57,6 +57,7 @@ function Success({ products }: Props) {
               src="https://rb.gy/vsvv2o"
               layout="fill"
               objectFit="contain"
+              alt="product image"
             />
           </div>
         </Link>
@@ -70,6 +71,7 @@ function Success({ products }: Props) {
                 src="https://rb.gy/vsvv2o"
                 layout="fill"
                 objectFit="contain"
+                alt="product"
               />
             </div>
           </Link>
@@ -170,6 +172,7 @@ function Success({ products }: Props) {
                             src="https://rb.gy/vsvv2o"
                             layout="fill"
                             objectFit="contain"
+                            alt="product"
                           />
                         </div>
                         <div className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-[gray] text-xs">

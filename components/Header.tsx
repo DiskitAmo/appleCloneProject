@@ -20,7 +20,12 @@ const Header = () => {
         <div className="flex items-center justify-center md:w-1/5">
           <Link href="/">
             <div className="relative w-12 h-12 cursor-pointer opacity-70 transition hover:opacity-100">
-              <Image src="/Apple-Logo.png" layout="fill" objectFit="contain" />
+              <Image
+                src="/Apple-Logo.png"
+                layout="fill"
+                objectFit="contain"
+                alt="product"
+              />
             </div>
           </Link>
         </div>
@@ -49,7 +54,7 @@ const Header = () => {
                 session.user?.image ||
                 "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y"
               }
-              alt=""
+              alt="product"
               className="cursor-pointer rounded-full"
               width={34}
               height={34}

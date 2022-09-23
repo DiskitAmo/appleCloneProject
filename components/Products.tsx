@@ -28,6 +28,7 @@ function Product({ product }: Props) {
           src={urlFor(product.image[0]).url()}
           layout="fill"
           objectFit="contain"
+          alt="product"
         />
       </div>
 

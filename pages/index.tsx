@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import type { GetServerSideProps } from "next";
+import type { GetServerSideProps, GetStaticProps } from "next";
 import { Tab } from "@headlessui/react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";

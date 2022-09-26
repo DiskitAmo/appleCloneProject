@@ -10,7 +10,7 @@ export default async function handler(
 
   const session = await stripe.checkout.sessions.listLineItems(sessionId);
 
-  res.status(200).json({
+  res.status(200).send({
     session,
   });
 }

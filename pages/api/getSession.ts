@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import logger from "next-auth/utils/logger";
+//import logger from "next-auth/utils/logger";
 import Stripe from "stripe";
 const stripe: Stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
@@ -15,15 +15,17 @@ export default async function handler(
       session,
     });
   } catch (e) {
-    logger.error;
-    (
-      code: String,
-      e:
-        | Error
-        | {
-            [key: string]: unknown;
-            error: Error;
-          }
-    ) => void res.status(500).send({ success: false });
+    // logger.error;
+    // (
+    //   code: String,
+    //   e:
+    //     | Error
+    //     | {
+    //         [key: string]: unknown;
+    //         error: Error;
+    //       }
+    // ) => void
+    res.status(500).send({ success: false });
+    console.log(e, "error");
   }
 }

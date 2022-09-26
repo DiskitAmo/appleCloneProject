@@ -15,16 +15,6 @@ export default async function handler(
       session,
     });
   } catch (e) {
-    // logger.error;
-    // (
-    //   code: String,
-    //   e:
-    //     | Error
-    //     | {
-    //         [key: string]: unknown;
-    //         error: Error;
-    //       }
-    // ) => void
     res.status(500).send({ success: false });
     console.log(e, "error");
   }
